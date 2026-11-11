@@ -321,3 +321,143 @@ button, input, select {
         width: 100%;
     }
 }
+/* =================================
+   BOKBI WORLD — SCRAPBOOK AESTHETIC
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap');
+
+:root {
+    --orange: #FFC49D;
+    --blue: #B9DDF2;
+    --cream: #FFF9EF;
+    --brown: #766052;
+    --white: #FFFFFF;
+    --light-orange: #FFE6D5;
+    --light-blue: #E4F3FC;
+    --border: #F2DDCF;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--cream);
+
+    background-image:
+        radial-gradient(#F6D8C5 1px, transparent 1px),
+        radial-gradient(#D5E9F6 1px, transparent 1px);
+
+    background-size: 30px 30px, 45px 45px;
+    background-position: 0 0, 15px 15px;
+    color: var(--brown);
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.site-header {
+    background: rgba(255,249,239,0.94);
+    border-bottom: 2px dashed #EBD5C5;
+    box-shadow: 0 4px 15px rgba(180,140,110,0.08);
+}
+
+.logo {
+    font-size: 29px;
+}
+
+.page-intro {
+    background:
+        radial-gradient(circle at 15% 20%, #FFFFFF 0 3px, transparent 4px),
+        radial-gradient(circle at 85% 70%, #FFFFFF 0 4px, transparent 5px),
+        linear-gradient(135deg, #FFDCC4, #D8EDFA, #FFF0C8);
+
+    border-radius: 0 0 45px 45px;
+    position: relative;
+}
+
+.page-intro h1 {
+    font-size: clamp(42px, 7vw, 65px);
+}
+
+.page-intro .eyebrow {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.container {
+    background: rgba(255,255,255,0.58);
+    border: 2px dashed #EBD5C5;
+    border-radius: 30px;
+    padding: 35px;
+}
+
+.year-button {
+    border: 2px solid transparent;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+}
+
+.year-button:nth-child(even) {
+    background: #FFE8D8;
+}
+
+.year-button:nth-child(odd) {
+    background: #E2F1FA;
+}
+
+.year-button.active {
+    background: #F6B98E;
+    border-color: white;
+}
+
+.video-card {
+    border: 2px solid #F3E1D5;
+    border-radius: 23px;
+    box-shadow: 0 6px 15px rgba(180,140,110,0.08);
+}
+
+.video-card:hover {
+    transform: translateY(-7px) rotate(-1deg);
+    box-shadow: 0 10px 20px rgba(180,140,110,0.13);
+}
+
+.video-thumbnail {
+    background: linear-gradient(135deg, #FFE3D0, #DDEFFC);
+}
+
+.video-info h3 {
+    font-size: 21px;
+}
+
+.video-link {
+    background: #FFF0E4;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+.empty-state {
+    border: 2px dashed #EACDBA;
+    background: #FFFCF7;
+    border-radius: 25px;
+}
+
+.empty-state h3 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.site-footer {
+    background: linear-gradient(120deg, #FFE2CD, #DCEFFA);
+    border-top: 2px dashed white;
+    border-radius: 35px 35px 0 0;
+}
+
+.site-footer h2 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+@media(max-width: 650px) {
+    .container {
+        padding: 20px;
+    }
+}
