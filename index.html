@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOKBI WORLD ♡</title>
 
-<title>BOKBI WORLD ♡ GeminiFourth Archive</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 :root {
-    --orange: #FFC49D;
-    --blue: #B9DDF2;
-    --cream: #FFF9EF;
-    --brown: #766052;
-    --pink: #F8DCE5;
-    --yellow: #FFF0B5;
+    --orange: #ffad78;
+    --blue: #b9ddf2;
+    --yellow: #ffe9a9;
+    --cream: #fff9ef;
+    --pink: #f8dce5;
+    --brown: #76503d;
+    --white: #ffffff;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--cream);
-    background-image:
-        radial-gradient(#F6D8C5 1px, transparent 1px),
-        radial-gradient(#D5E9F6 1px, transparent 1px);
-    background-size: 30px 30px, 45px 45px;
-    background-position: 0 0, 15px 15px;
+    background: var(--cream);
     color: var(--brown);
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
-/* HEADER */
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 header {
+    height: 76px;
+    padding: 0 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 7%;
-    background: rgba(255,249,239,0.95);
-    border-bottom: 2px dashed #EBD5C5;
+    background: rgba(255,249,239,0.96);
+    border-bottom: 1px solid #f5e3d2;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -56,406 +51,421 @@ header {
 
 .logo {
     font-family: 'Fredoka', sans-serif;
-    font-size: 29px;
+    font-size: 30px;
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 .logo span {
-    color: #E99C6B;
+    color: #f58c53;
 }
 
 nav {
     display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--brown);
-    font-size: 13px;
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 10px 19px;
+    border-radius: 30px;
 }
 
-nav a:hover {
-    color: #E99C6B;
+nav a:hover,
+nav a.active {
+    background: #ffe0cb;
 }
-
-/* HERO */
 
 .hero {
-    margin: 35px auto;
-    width: 88%;
-    min-height: 420px;
-    border-radius: 35px;
-    background:
-        radial-gradient(circle at 15% 20%, white 0 4px, transparent 5px),
-        radial-gradient(circle at 85% 75%, white 0 5px, transparent 6px),
-        linear-gradient(135deg, #FFDCC4, #D8EDFA, #FFF0C8);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 1250px;
+    margin: 50px auto 35px;
+    padding: 30px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
     align-items: center;
+    gap: 18px;
+}
+
+.polaroid {
+    background: white;
+    padding: 12px 12px 35px;
+    border-radius: 7px;
+    box-shadow: 0 8px 20px #a98b7240;
     text-align: center;
-    padding: 40px 20px;
-    border: 3px solid white;
-    outline: 2px dashed #EBD5C5;
+    transform: rotate(-5deg);
 }
 
-.tag {
-    background: white;
-    padding: 9px 20px;
-    border-radius: 30px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    font-weight: 800;
+.polaroid.right {
+    transform: rotate(5deg);
 }
 
-.hero h1 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: clamp(42px, 7vw, 75px);
-    margin-bottom: 15px;
+.polaroid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-.hero p {
-    max-width: 520px;
-    line-height: 1.9;
-    font-size: 15px;
-}
-
-.hero button {
-    margin-top: 25px;
-    padding: 14px 28px;
-    border: 2px solid white;
-    border-radius: 30px;
-    background: white;
-    color: var(--brown);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.hero button:hover {
-    transform: rotate(-3deg) scale(1.05);
-    background: var(--yellow);
-}
-
-/* DECORATIONS */
-
-.decoration {
+.polaroid p {
     font-family: 'Caveat', cursive;
-    font-size: 23px;
-    color: #C78E70;
-    margin-top: 15px;
-}
-
-/* SECTIONS */
-
-.section {
-    padding: 45px 7%;
-}
-
-.section-title {
-    margin-bottom: 25px;
-}
-
-.section-title small {
-    color: #D18F69;
-    letter-spacing: 3px;
-    font-size: 11px;
-    font-weight: 800;
-}
-
-.section-title h2 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 8px;
 }
 
-/* CARDS */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
+.welcome {
+    text-align: center;
+    padding: 45px 25px;
+    border-radius: 45% 35% 40% 30% / 20% 25% 20% 30%;
+    background: linear-gradient(130deg, #f8dce5, #d9edfa, #fff0b5);
+    border: 5px solid white;
+    box-shadow: 0 10px 25px #d7bca540;
 }
 
-.card {
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    border: 2px solid white;
-    outline: 1px dashed #EBD5C5;
-    box-shadow: 0 5px 18px rgba(120,90,60,0.07);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-7px) rotate(-1deg);
-}
-
-.card-image {
-    height: 185px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fredoka', sans-serif;
-    font-size: 28px;
-}
-
-.orange {
-    background: #FFE0CB;
-}
-
-.blue {
-    background: #DCEFFA;
-}
-
-.cream {
-    background: #FFF0C8;
-}
-
-.card-content {
-    padding: 22px;
-}
-
-.card-content small {
-    color: #D18F69;
-    font-size: 10px;
+.eyebrow {
+    font-weight: 900;
     letter-spacing: 2px;
-    font-weight: 800;
-}
-
-.card-content h3 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 23px;
-    margin: 9px 0;
-}
-
-.card-content p {
     font-size: 13px;
-    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
-/* ARCHIVE BUTTON */
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
 
-.archive-button {
+h1 span {
+    color: #f58c53;
+}
+
+.welcome-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: auto;
+}
+
+.handwritten {
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    margin: 18px 0;
+}
+
+.main-button {
     display: inline-block;
-    margin-top: 30px;
-    background: #F8D9C3;
-    padding: 14px 25px;
-    border-radius: 30px;
-    color: var(--brown);
-    text-decoration: none;
-    font-weight: 800;
-    border: 2px solid white;
-    transition: 0.3s;
+    background: #f58c53;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 35px;
+    font-weight: 900;
+    box-shadow: 0 5px 0 #df7944;
+    margin-top: 8px;
+    transition: .2s;
 }
 
-.archive-button:hover {
-    background: var(--blue);
+.main-button:hover {
     transform: translateY(-3px);
 }
 
-/* FOOTER */
+.section {
+    max-width: 1250px;
+    padding: 30px 25px 65px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    background: #fff0d8;
+    border: 2px dashed #ffc48f;
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.section h2 span {
+    color: #f58c53;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 18px;
+    border: 4px solid white;
+    border-radius: 30px;
+    box-shadow: 0 5px 12px #a98b7230;
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+}
+
+.card img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 20px;
+    background: white;
+}
+
+.card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 24px;
+    margin: 13px 0 5px;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: 900;
+    background: rgba(255,255,255,.6);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.gemini-card { background: #ffe0ce; }
+.fourth-card { background: #dceffa; }
+.pair-card { background: #fff0c6; }
+.kh-card { background: #fff0b5; }
+
+.memory {
+    max-width: 1100px;
+    margin: 0 auto 65px;
+    padding: 45px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #ffe2d1, #e1effa, #fff0c6);
+    border: 5px solid white;
+    border-radius: 35px;
+    box-shadow: 0 8px 20px #a98b7230;
+}
+
+.memory h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.memory p {
+    font-weight: 700;
+    margin-bottom: 18px;
+}
 
 footer {
     text-align: center;
-    padding: 45px 20px;
-    background: linear-gradient(120deg, #FFE2CD, #DCEFFA);
-    border-radius: 35px 35px 0 0;
-    margin-top: 50px;
-    border-top: 2px dashed white;
+    padding: 30px;
+    background: #fff0df;
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
 }
 
-footer h2 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-footer p {
-    font-size: 12px;
-    line-height: 2;
-}
-
-/* MOBILE */
-
-@media(max-width: 650px) {
-
+@media(max-width: 850px) {
     header {
+        padding: 12px 5%;
+        height: auto;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     nav {
+        gap: 5px;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 12px;
     }
 
     .hero {
-        min-height: 350px;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
     }
 
+    .welcome {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .polaroid img {
+        height: 170px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media(max-width: 480px) {
+    .hero {
+        gap: 12px;
+    }
+
+    .polaroid {
+        padding: 8px 8px 25px;
+    }
+
+    .polaroid img {
+        height: 125px;
+    }
+
+    .polaroid p {
+        font-size: 20px;
+    }
+
+    .welcome {
+        padding: 35px 15px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        gap: 12px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .card h3 {
+        font-size: 19px;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-
-    <div class="logo">
+    <a href="index.html" class="logo">
         BOKBI <span>WORLD ♡</span>
-    </div>
+    </a>
 
     <nav>
-        <a href="#home">HOME</a>
-        <a href="#explore">EXPLORE</a>
+        <a href="index.html" class="active">HOME</a>
+        <a href="pages/archive.html">EXPLORE</a>
         <a href="pages/archive.html">ARCHIVE</a>
         <a href="#about">ABOUT</a>
     </nav>
-
 </header>
 
+<main>
 
-<section class="hero" id="home">
+<section class="hero">
 
-    <div class="tag">
-        A LITTLE GEMINIFOURTH UNIVERSE ♡
+    <div class="polaroid">
+        <img src="assets/gemini.jpg" alt="Gemini Norawit">
+        <p>Gemini ♡</p>
     </div>
 
-    <h1>Welcome to BOKBI WORLD!</h1>
+    <div class="welcome">
+        <p class="eyebrow">A LITTLE GEMINIFOURTH UNIVERSE ♡</p>
 
-    <p>
-        A little corner of the internet dedicated to
-        Gemini Norawit and Fourth Nattawat.
+        <h1>Welcome to<br>BOKBI <span>WORLD!</span></h1>
 
-        Every moment, every memory, every story —
-        collected with love.
-    </p>
+        <p class="welcome-text">
+            A little corner of the internet dedicated to
+            Gemini Norawit, Fourth Nattawat,
+            Look Khunnoo and their beautiful journey together.
+        </p>
 
-    <div class="decoration">
-        made with love, just for you ♡
+        <p class="handwritten">made with love, just for you ♡</p>
+
+        <a href="pages/archive.html" class="main-button">
+            Explore our memories →
+        </a>
     </div>
 
-    <button onclick="location.href='pages/archive.html'">
-        Explore our memories →
-    </button>
+    <div class="polaroid right">
+        <img src="assets/look-khunnoo.jpg" alt="Look Khunnoo">
+        <p>Look Khunnoo ♡</p>
+    </div>
 
 </section>
 
+<section class="section" id="about">
 
-<section class="section" id="explore">
-
-    <div class="section-title">
-        <small>♡ DISCOVER OUR LITTLE UNIVERSE ♡</small>
-        <h2>Explore BOKBI WORLD</h2>
+    <div class="section-label">
+        ♡ DISCOVER OUR LITTLE UNIVERSE ♡
     </div>
+
+    <h2>Explore <span>BOKBI WORLD</span></h2>
 
     <div class="cards">
 
-        <div class="card">
-            <div class="card-image orange">
-                ♡ Gemini ♡
-            </div>
+        <a href="pages/archive.html" class="card gemini-card">
+            <img src="assets/gemini.jpg" alt="Gemini">
+            <h3>Gemini Norawit ♡</h3>
+            <p>THE ORANGE CORNER</p>
+        </a>
 
-            <div class="card-content">
-                <small>THE ORANGE CORNER</small>
-                <h3>Gemini Norawit</h3>
-                <p>
-                    His journey, projects, performances
-                    and unforgettable moments.
-                </p>
-            </div>
-        </div>
+        <a href="pages/archive.html" class="card fourth-card">
+            <img src="assets/fourth.jpg" alt="Fourth">
+            <h3>Fourth Nattawat ♡</h3>
+            <p>THE BLUE CORNER</p>
+        </a>
 
+        <a href="pages/archive.html" class="card pair-card">
+            <img src="assets/geminifourth.jpg" alt="GeminiFourth">
+            <h3>GeminiFourth ♡</h3>
+            <p>OUR LITTLE UNIVERSE</p>
+        </a>
 
-        <div class="card">
-            <div class="card-image blue">
-                ♡ Fourth ♡
-            </div>
-
-            <div class="card-content">
-                <small>THE BLUE CORNER</small>
-                <h3>Fourth Nattawat</h3>
-                <p>
-                    His journey, projects, performances
-                    and beautiful memories.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-image cream">
-                ♡ GeminiFourth ♡
-            </div>
-
-            <div class="card-content">
-                <small>OUR LITTLE UNIVERSE</small>
-                <h3>GeminiFourth</h3>
-                <p>
-                    Their shared projects, moments,
-                    performances and stories.
-                </p>
-            </div>
-        </div>
+        <a href="pages/archive.html" class="card kh-card">
+            <img src="assets/look-khunnoo.jpg" alt="Look Khunnoo">
+            <h3>Look Khunnoo ♡</h3>
+            <p>OUR LITTLE SON</p>
+        </a>
 
     </div>
-
 </section>
 
+<section class="memory">
 
-<section class="section">
-
-    <div class="section-title">
-        <small>♡ EVERY MOMENT MATTERS ♡</small>
-        <h2>Take a trip down Memory Lane</h2>
-    </div>
-
-    <div class="card">
-        <div class="card-image blue">
-            ✨ MEMORY LANE ✨
-        </div>
-
-        <div class="card-content">
-            <h3>Let's relive the memories!</h3>
-
-            <p>
-                Travel through the years and rediscover
-                interviews, events, performances,
-                photographs and special moments.
-            </p>
-
-            <a href="pages/archive.html" class="archive-button">
-                Enter the archive ♡
-            </a>
-        </div>
-    </div>
-
-</section>
-
-
-<footer id="about">
-
-    <h2>BOKBI WORLD ♡</h2>
+    <h2>♡ Let's take a walk down memory lane ♡</h2>
 
     <p>
-        A little universe made with love
-        for Gemini Norawit & Fourth Nattawat.
-        <br>
-        An unofficial fan-made archive.
-        Not affiliated with GMMTV or the artists.
-        <br>
-        © BOKBI WORLD
+        Every performance, every project, every little moment.
+        Let's keep their memories alive, together.
     </p>
 
+    <a href="pages/archive.html" class="main-button">
+        Visit the archive →
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    made with love for our little universe ♡
+    <br>
+    BOKBI WORLD © 2026
 </footer>
 
 </body>
