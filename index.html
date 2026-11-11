@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BOKBI WORLD ♡</title>
+<title>BOKBII WORLD ♡</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 
@@ -15,7 +15,6 @@
     --cream: #fff9ef;
     --pink: #f8dce5;
     --brown: #76503d;
-    --white: #ffffff;
 }
 
 * {
@@ -37,8 +36,8 @@ a {
 }
 
 header {
-    height: 76px;
-    padding: 0 7%;
+    min-height: 76px;
+    padding: 12px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,13 +54,15 @@ header {
     font-weight: 700;
 }
 
-.logo span {
+.logo span,
+h1 span,
+.section h2 span {
     color: #f58c53;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -78,19 +79,19 @@ nav a.active {
 }
 
 .hero {
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 50px auto 35px;
     padding: 30px 5%;
     display: grid;
     grid-template-columns: 1fr 1.8fr 1fr;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
 }
 
 .polaroid {
     background: white;
     padding: 12px 12px 35px;
-    border-radius: 7px;
+    border-radius: 8px;
     box-shadow: 0 8px 20px #a98b7240;
     text-align: center;
     transform: rotate(-5deg);
@@ -103,8 +104,10 @@ nav a.active {
 .polaroid img {
     width: 100%;
     height: 220px;
-    object-fit: cover;
-    border-radius: 4px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+    background: #fff9ef;
 }
 
 .polaroid p {
@@ -134,10 +137,6 @@ h1 {
     font-size: clamp(40px, 5vw, 65px);
     line-height: 1.05;
     margin-bottom: 18px;
-}
-
-h1 span {
-    color: #f58c53;
 }
 
 .welcome-text {
@@ -194,10 +193,6 @@ h1 span {
     margin-bottom: 35px;
 }
 
-.section h2 span {
-    color: #f58c53;
-}
-
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -219,7 +214,8 @@ h1 span {
 .card img {
     width: 100%;
     height: 155px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     border-radius: 20px;
     background: white;
 }
@@ -275,8 +271,6 @@ footer {
 
 @media(max-width: 850px) {
     header {
-        padding: 12px 5%;
-        height: auto;
         flex-direction: column;
         gap: 12px;
     }
@@ -363,7 +357,7 @@ footer {
 
 <header>
     <a href="index.html" class="logo">
-        BOKBI <span>WORLD ♡</span>
+        BOKBII <span>WORLD ♡</span>
     </a>
 
     <nav>
@@ -379,14 +373,14 @@ footer {
 <section class="hero">
 
     <div class="polaroid">
-        <img src="assets/gemini.jpg" alt="Gemini Norawit">
-        <p>Gemini ♡</p>
+        <img src="assets/geminifourth.jpg" alt="GeminiFourth">
+        <p>BokBii ♡</p>
     </div>
 
     <div class="welcome">
         <p class="eyebrow">A LITTLE GEMINIFOURTH UNIVERSE ♡</p>
 
-        <h1>Welcome to<br>BOKBI <span>WORLD!</span></h1>
+        <h1>Welcome to<br>BOKBII <span>WORLD!</span></h1>
 
         <p class="welcome-text">
             A little corner of the internet dedicated to
@@ -414,7 +408,7 @@ footer {
         ♡ DISCOVER OUR LITTLE UNIVERSE ♡
     </div>
 
-    <h2>Explore <span>BOKBI WORLD</span></h2>
+    <h2>Explore <span>BOKBII WORLD</span></h2>
 
     <div class="cards">
 
@@ -465,7 +459,7 @@ footer {
 <footer>
     made with love for our little universe ♡
     <br>
-    BOKBI WORLD © 2026
+    BOKBII WORLD © 2026
 </footer>
 
 </body>
