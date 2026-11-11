@@ -1,444 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BOKBI WORLD | GeminiFourth Archive</title>
+<title>BOKBI WORLD ♡ GeminiFourth Archive</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
-  --orange: #f4a36c;
-  --blue: #8bbbdc;
-  --cream: #fffaf2;
-  --brown: #51443c;
-  --white: #ffffff;
+    --orange: #FFC49D;
+    --blue: #B9DDF2;
+    --cream: #FFF9EF;
+    --brown: #766052;
+    --pink: #F8DCE5;
+    --yellow: #FFF0B5;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: var(--cream);
-  color: var(--brown);
-  font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+    background-image:
+        radial-gradient(#F6D8C5 1px, transparent 1px),
+        radial-gradient(#D5E9F6 1px, transparent 1px);
+    background-size: 30px 30px, 45px 45px;
+    background-position: 0 0, 15px 15px;
+    color: var(--brown);
+    font-family: 'Nunito', sans-serif;
 }
 
+/* HEADER */
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 7%;
-  background: rgba(255,250,242,0.95);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid #f0e8dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: rgba(255,249,239,0.95);
+    border-bottom: 2px dashed #EBD5C5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 27px;
-  font-weight: bold;
-  letter-spacing: 2px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .logo span {
-  color: var(--orange);
+    color: #E99C6B;
 }
 
 nav {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--brown);
-  font-size: 13px;
-  font-weight: 600;
+    text-decoration: none;
+    color: var(--brown);
+    font-size: 13px;
+    font-weight: 800;
 }
 
 nav a:hover {
-  color: #df925e;
+    color: #E99C6B;
 }
+
+/* HERO */
 
 .hero {
-  margin: 35px auto;
-  width: 88%;
-  min-height: 390px;
-  border-radius: 24px;
-  background: linear-gradient(120deg, #f8c49f, #b9d9ed);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
+    margin: 35px auto;
+    width: 88%;
+    min-height: 420px;
+    border-radius: 35px;
+    background:
+        radial-gradient(circle at 15% 20%, white 0 4px, transparent 5px),
+        radial-gradient(circle at 85% 75%, white 0 5px, transparent 6px),
+        linear-gradient(135deg, #FFDCC4, #D8EDFA, #FFF0C8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    border: 3px solid white;
+    outline: 2px dashed #EBD5C5;
 }
 
-.hero .tag {
-  background: rgba(255,255,255,0.65);
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-size: 11px;
-  letter-spacing: 2px;
-  margin-bottom: 22px;
+.tag {
+    background: white;
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(42px, 7vw, 75px);
-  margin-bottom: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(42px, 7vw, 75px);
+    margin-bottom: 15px;
 }
 
 .hero p {
-  max-width: 500px;
-  line-height: 1.8;
-  font-size: 14px;
+    max-width: 520px;
+    line-height: 1.9;
+    font-size: 15px;
 }
 
 .hero button {
-  margin-top: 25px;
-  padding: 13px 28px;
-  border: none;
-  border-radius: 30px;
-  background: var(--white);
-  color: var(--brown);
-  font-weight: bold;
-  cursor: pointer;
+    margin-top: 25px;
+    padding: 14px 28px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: white;
+    color: var(--brown);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.hero button:hover {
+    transform: rotate(-3deg) scale(1.05);
+    background: var(--yellow);
+}
+
+/* DECORATIONS */
+
+.decoration {
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+    color: #C78E70;
+    margin-top: 15px;
+}
+
+/* SECTIONS */
+
 .section {
-  padding: 45px 7%;
+    padding: 45px 7%;
 }
 
 .section-title {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .section-title small {
-  color: #d68c60;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 10px;
+    color: #D18F69;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 800;
 }
 
 .section-title h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  margin-top: 8px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 35px;
+    margin-top: 8px;
 }
 
+/* CARDS */
+
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
 }
 
 .card {
-  background: white;
-  border-radius: 17px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(80,60,40,0.06);
-  transition: transform 0.3s;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid white;
+    outline: 1px dashed #EBD5C5;
+    box-shadow: 0 5px 18px rgba(120,90,60,0.07);
+    transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-7px) rotate(-1deg);
 }
 
 .card-image {
-  height: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 27px;
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
 }
 
 .orange {
-  background: #f7d0b2;
+    background: #FFE0CB;
 }
 
 .blue {
-  background: #c5dfef;
+    background: #DCEFFA;
 }
 
 .cream {
-  background: #eee3d4;
+    background: #FFF0C8;
 }
 
 .card-content {
-  padding: 20px;
+    padding: 22px;
 }
 
 .card-content small {
-  color: #d68c60;
-  font-size: 10px;
-  letter-spacing: 1px;
+    color: #D18F69;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 800;
 }
 
 .card-content h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  margin: 8px 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 23px;
+    margin: 9px 0;
 }
 
 .card-content p {
-  font-size: 12px;
-  line-height: 1.7;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
-.archive-controls {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
+/* ARCHIVE BUTTON */
+
+.archive-button {
+    display: inline-block;
+    margin-top: 30px;
+    background: #F8D9C3;
+    padding: 14px 25px;
+    border-radius: 30px;
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: 800;
+    border: 2px solid white;
+    transition: 0.3s;
 }
 
-.archive-controls input {
-  flex: 1;
-  min-width: 200px;
-  padding: 13px 17px;
-  border: 1px solid #e8daca;
-  border-radius: 30px;
-  background: white;
-  outline: none;
+.archive-button:hover {
+    background: var(--blue);
+    transform: translateY(-3px);
 }
 
-.filter-btn {
-  border: none;
-  padding: 12px 18px;
-  border-radius: 25px;
-  background: #f2e6d9;
-  color: var(--brown);
-  cursor: pointer;
-}
-
-.filter-btn.active {
-  background: var(--orange);
-  color: white;
-}
-
-.archive-card[hidden] {
-  display: none;
-}
+/* FOOTER */
 
 footer {
-  text-align: center;
-  padding: 45px 20px;
-  background: #f3e8db;
-  margin-top: 40px;
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(120deg, #FFE2CD, #DCEFFA);
+    border-radius: 35px 35px 0 0;
+    margin-top: 50px;
+    border-top: 2px dashed white;
 }
 
 footer h2 {
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 footer p {
-  font-size: 12px;
-  line-height: 2;
+    font-size: 12px;
+    line-height: 2;
 }
+
+/* MOBILE */
 
 @media(max-width: 650px) {
-  header {
-    flex-direction: column;
-    gap: 15px;
-  }
 
-  nav {
-    justify-content: center;
-    gap: 15px;
-  }
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-  .hero {
-    min-height: 330px;
-  }
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">BOKBI <span>WORLD.</span></div>
 
-  <nav>
-    <a href="#home">HOME</a>
-    <a href="#explore">EXPLORE</a>
-    <a href="#archive">ARCHIVE</a>
-    <a href="#about">ABOUT</a>
-  </nav>
+    <div class="logo">
+        BOKBI <span>WORLD ♡</span>
+    </div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#explore">EXPLORE</a>
+        <a href="pages/archive.html">ARCHIVE</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+
 </header>
 
+
 <section class="hero" id="home">
-  <div class="tag">A GEMINIFOURTH FAN ARCHIVE</div>
 
-  <h1>Welcome to BOKBI WORLD ♡</h1>
+    <div class="tag">
+        A LITTLE GEMINIFOURTH UNIVERSE ♡
+    </div>
 
-  <p>
-    A little universe dedicated to Gemini Norawit
-    and Fourth Nattawat. Every moment, every memory,
-    every story — archived with love.
-  </p>
+    <h1>Welcome to BOKBI WORLD!</h1>
 
-  <button onclick="document.getElementById('archive').scrollIntoView({behavior:'smooth'})">
-    Explore the archive →
-  </button>
+    <p>
+        A little corner of the internet dedicated to
+        Gemini Norawit and Fourth Nattawat.
+
+        Every moment, every memory, every story —
+        collected with love.
+    </p>
+
+    <div class="decoration">
+        made with love, just for you ♡
+    </div>
+
+    <button onclick="location.href='pages/archive.html'">
+        Explore our memories →
+    </button>
+
 </section>
+
 
 <section class="section" id="explore">
 
-  <div class="section-title">
-    <small>DISCOVER OUR WORLD</small>
-    <h2>Explore BOKBI WORLD</h2>
-  </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="card-image orange">♡ Gemini</div>
-      <div class="card-content">
-        <small>THE ARCHIVE</small>
-        <h3>Gemini Norawit</h3>
-        <p>A collection of Gemini's activities, projects and memorable moments.</p>
-      </div>
+    <div class="section-title">
+        <small>♡ DISCOVER OUR LITTLE UNIVERSE ♡</small>
+        <h2>Explore BOKBI WORLD</h2>
     </div>
 
-    <div class="card">
-      <div class="card-image blue">♡ Fourth</div>
-      <div class="card-content">
-        <small>THE ARCHIVE</small>
-        <h3>Fourth Nattawat</h3>
-        <p>Discover Fourth's projects, appearances and special moments.</p>
-      </div>
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-image orange">
+                ♡ Gemini ♡
+            </div>
+
+            <div class="card-content">
+                <small>THE ORANGE CORNER</small>
+                <h3>Gemini Norawit</h3>
+                <p>
+                    His journey, projects, performances
+                    and unforgettable moments.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-image blue">
+                ♡ Fourth ♡
+            </div>
+
+            <div class="card-content">
+                <small>THE BLUE CORNER</small>
+                <h3>Fourth Nattawat</h3>
+                <p>
+                    His journey, projects, performances
+                    and beautiful memories.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-image cream">
+                ♡ GeminiFourth ♡
+            </div>
+
+            <div class="card-content">
+                <small>OUR LITTLE UNIVERSE</small>
+                <h3>GeminiFourth</h3>
+                <p>
+                    Their shared projects, moments,
+                    performances and stories.
+                </p>
+            </div>
+        </div>
+
     </div>
 
-    <div class="card">
-      <div class="card-image cream">♡ GeminiFourth</div>
-      <div class="card-content">
-        <small>TOGETHER</small>
-        <h3>GeminiFourth</h3>
-        <p>Everything about their collaborations and shared projects.</p>
-      </div>
-    </div>
-
-  </div>
 </section>
 
-<section class="section" id="archive">
 
-  <div class="section-title">
-    <small>COLLECTING MEMORIES</small>
-    <h2>The Archive</h2>
-  </div>
+<section class="section">
 
-  <div class="archive-controls">
-    <input type="text" id="searchInput"
-      placeholder="Search the archive...">
-
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="series">Series</button>
-    <button class="filter-btn" data-filter="music">Music</button>
-    <button class="filter-btn" data-filter="programs">Programs</button>
-    <button class="filter-btn" data-filter="events">Events</button>
-  </div>
-
-  <div class="cards" id="archiveCards">
-
-    <div class="card archive-card" data-category="series">
-      <div class="card-image orange">SERIES ♡</div>
-      <div class="card-content">
-        <small>SERIES</small>
-        <h3>Drama Collection</h3>
-        <p>A collection of their acting projects.</p>
-      </div>
+    <div class="section-title">
+        <small>♡ EVERY MOMENT MATTERS ♡</small>
+        <h2>Take a trip down Memory Lane</h2>
     </div>
 
-    <div class="card archive-card" data-category="music">
-      <div class="card-image blue">MUSIC ♡</div>
-      <div class="card-content">
-        <small>MUSIC</small>
-        <h3>Music Collection</h3>
-        <p>Songs, performances and music videos.</p>
-      </div>
+    <div class="card">
+        <div class="card-image blue">
+            ✨ MEMORY LANE ✨
+        </div>
+
+        <div class="card-content">
+            <h3>Let's relive the memories!</h3>
+
+            <p>
+                Travel through the years and rediscover
+                interviews, events, performances,
+                photographs and special moments.
+            </p>
+
+            <a href="pages/archive.html" class="archive-button">
+                Enter the archive ♡
+            </a>
+        </div>
     </div>
 
-    <div class="card archive-card" data-category="programs">
-      <div class="card-image cream">PROGRAMS ♡</div>
-      <div class="card-content">
-        <small>PROGRAMS</small>
-        <h3>Shows & Interviews</h3>
-        <p>Variety shows, interviews and appearances.</p>
-      </div>
-    </div>
-
-    <div class="card archive-card" data-category="events">
-      <div class="card-image orange">EVENTS ♡</div>
-      <div class="card-content">
-        <small>EVENTS</small>
-        <h3>Events Collection</h3>
-        <p>Fan meetings, concerts and special events.</p>
-      </div>
-    </div>
-
-  </div>
 </section>
+
 
 <footer id="about">
-  <h2>BOKBI WORLD ♡</h2>
-  <p>
-    Made with love for Gemini Norawit & Fourth Nattawat.
-    <br>
-    An unofficial fan-made archive. Not affiliated with GMMTV or the artists.
-    <br>
-    © BOKBI WORLD
-  </p>
+
+    <h2>BOKBI WORLD ♡</h2>
+
+    <p>
+        A little universe made with love
+        for Gemini Norawit & Fourth Nattawat.
+        <br>
+        An unofficial fan-made archive.
+        Not affiliated with GMMTV or the artists.
+        <br>
+        © BOKBI WORLD
+    </p>
+
 </footer>
-
-<script>
-const searchInput = document.getElementById('searchInput');
-const filterButtons = document.querySelectorAll('.filter-btn');
-const cards = document.querySelectorAll('.archive-card');
-
-let currentFilter = 'all';
-
-function updateArchive() {
-  const search = searchInput.value.toLowerCase();
-
-  cards.forEach(card => {
-    const category = card.dataset.category;
-    const matchesFilter =
-      currentFilter === 'all' || category === currentFilter;
-
-    const matchesSearch =
-      card.innerText.toLowerCase().includes(search);
-
-    card.hidden = !(matchesFilter && matchesSearch);
-  });
-}
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-
-    button.classList.add('active');
-    currentFilter = button.dataset.filter;
-
-    updateArchive();
-  });
-});
-
-searchInput.addEventListener('input', updateArchive);
-</script>
 
 </body>
 </html>
