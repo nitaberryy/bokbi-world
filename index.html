@@ -128,7 +128,17 @@ nav a.active {
     margin-top: 12px;
 }
 
-/* WELCOME CLOUD */
+/* HERO PHOTO POSITIONING */
+
+.hero .polaroid:first-child img {
+    object-position: center 12%;
+}
+
+.hero .polaroid.right img {
+    object-position: center;
+}
+
+/* WELCOME SECTION */
 
 .welcome {
     text-align: center;
@@ -237,6 +247,28 @@ h1 {
     display: block;
 }
 
+/* INDIVIDUAL DISCOVERY PHOTO POSITIONING */
+
+/* Gemini */
+.gemini-card img {
+    object-position: center 12%;
+}
+
+/* Fourth */
+.fourth-card img {
+    object-position: center 12%;
+}
+
+/* GeminiFourth */
+.pair-card img {
+    object-position: center 12%;
+}
+
+/* Look Khunnoo */
+.kh-card img {
+    object-position: center;
+}
+
 .card h3 {
     font-family: 'Fredoka', sans-serif;
     font-size: 24px;
@@ -304,6 +336,7 @@ footer {
 /* TABLET */
 
 @media(max-width: 850px) {
+
     header {
         flex-direction: column;
         gap: 12px;
@@ -342,6 +375,7 @@ footer {
 /* MOBILE */
 
 @media(max-width: 480px) {
+
     .hero {
         gap: 12px;
     }
@@ -400,6 +434,7 @@ footer {
 <body>
 
 <header>
+
     <a href="index.html" class="logo">
         BOKBII <span>WORLD ♡</span>
     </a>
@@ -410,93 +445,114 @@ footer {
         <a href="pages/archive.html">ARCHIVE</a>
         <a href="#about">ABOUT</a>
     </nav>
+
 </header>
 
 <main>
 
-<section class="hero">
+    <!-- HERO SECTION -->
 
-    <div class="polaroid">
-        <img src="assets/geminifourth.jpg" alt="GeminiFourth">
-        <p>BokBii ♡</p>
-    </div>
+    <section class="hero">
 
-    <div class="welcome">
-        <p class="eyebrow">A LITTLE GEMINIFOURTH UNIVERSE ♡</p>
+        <div class="polaroid">
+            <img src="assets/geminifourth.jpg" alt="GeminiFourth">
+            <p>BokBii ♡</p>
+        </div>
 
-        <h1>Welcome to<br>BOKBII <span>WORLD!</span></h1>
+        <div class="welcome">
 
-        <p class="welcome-text">
-            A little corner of the internet dedicated to
-            Gemini Norawit, Fourth Nattawat,
-            Look Khunnoo and their beautiful journey together.
+            <p class="eyebrow">
+                A LITTLE GEMINIFOURTH UNIVERSE ♡
+            </p>
+
+            <h1>
+                Welcome to<br>
+                BOKBII <span>WORLD!</span>
+            </h1>
+
+            <p class="welcome-text">
+                A little corner of the internet dedicated to
+                Gemini Norawit, Fourth Nattawat,
+                Look Khunnoo and their beautiful journey together.
+            </p>
+
+            <p class="handwritten">
+                made with love, just for you ♡
+            </p>
+
+            <a href="pages/archive.html" class="main-button">
+                Explore our memories →
+            </a>
+
+        </div>
+
+        <div class="polaroid right">
+            <img src="assets/look-khunnoo.jpg" alt="Look Khunnoo">
+            <p>Look Khunnoo ♡</p>
+        </div>
+
+    </section>
+
+    <!-- DISCOVERY CARDS -->
+
+    <section class="section" id="about">
+
+        <div class="section-label">
+            ♡ DISCOVER OUR LITTLE UNIVERSE ♡
+        </div>
+
+        <h2>
+            Explore <span>BOKBII WORLD</span>
+        </h2>
+
+        <div class="cards">
+
+            <a href="pages/archive.html" class="card gemini-card">
+                <img src="assets/gemini.jpg" alt="Gemini">
+                <h3>Gemini Norawit ♡</h3>
+                <p>THE ORANGE CORNER</p>
+            </a>
+
+            <a href="pages/archive.html" class="card fourth-card">
+                <img src="assets/fourth.jpg" alt="Fourth">
+                <h3>Fourth Nattawat ♡</h3>
+                <p>THE BLUE CORNER</p>
+            </a>
+
+            <a href="pages/archive.html" class="card pair-card">
+                <img src="assets/geminifourth.jpg" alt="GeminiFourth">
+                <h3>GeminiFourth ♡</h3>
+                <p>OUR LITTLE UNIVERSE</p>
+            </a>
+
+            <a href="pages/archive.html" class="card kh-card">
+                <img src="assets/look-khunnoo.jpg" alt="Look Khunnoo">
+                <h3>Look Khunnoo ♡</h3>
+                <p>OUR LITTLE SON</p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- MEMORY LANE -->
+
+    <section class="memory">
+
+        <h2>
+            ♡ Let's take a walk down memory lane ♡
+        </h2>
+
+        <p>
+            Every performance, every project, every little moment.
+            Let's keep their memories alive, together.
         </p>
 
-        <p class="handwritten">made with love, just for you ♡</p>
-
         <a href="pages/archive.html" class="main-button">
-            Explore our memories →
-        </a>
-    </div>
-
-    <div class="polaroid right">
-        <img src="assets/look-khunnoo.jpg" alt="Look Khunnoo">
-        <p>Look Khunnoo ♡</p>
-    </div>
-
-</section>
-
-<section class="section" id="about">
-
-    <div class="section-label">
-        ♡ DISCOVER OUR LITTLE UNIVERSE ♡
-    </div>
-
-    <h2>Explore <span>BOKBII WORLD</span></h2>
-
-    <div class="cards">
-
-        <a href="pages/archive.html" class="card gemini-card">
-            <img src="assets/gemini.jpg" alt="Gemini">
-            <h3>Gemini Norawit ♡</h3>
-            <p>THE ORANGE CORNER</p>
+            Visit the archive →
         </a>
 
-        <a href="pages/archive.html" class="card fourth-card">
-            <img src="assets/fourth.jpg" alt="Fourth">
-            <h3>Fourth Nattawat ♡</h3>
-            <p>THE BLUE CORNER</p>
-        </a>
-
-        <a href="pages/archive.html" class="card pair-card">
-            <img src="assets/geminifourth.jpg" alt="GeminiFourth">
-            <h3>GeminiFourth ♡</h3>
-            <p>OUR LITTLE UNIVERSE</p>
-        </a>
-
-        <a href="pages/archive.html" class="card kh-card">
-            <img src="assets/look-khunnoo.jpg" alt="Look Khunnoo">
-            <h3>Look Khunnoo ♡</h3>
-            <p>OUR LITTLE SON</p>
-        </a>
-
-    </div>
-</section>
-
-<section class="memory">
-
-    <h2>♡ Let's take a walk down memory lane ♡</h2>
-
-    <p>
-        Every performance, every project, every little moment.
-        Let's keep their memories alive, together.
-    </p>
-
-    <a href="pages/archive.html" class="main-button">
-        Visit the archive →
-    </a>
-
-</section>
+    </section>
 
 </main>
 
