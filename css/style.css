@@ -1,1 +1,323 @@
+/* =================================
+   BOKBI WORLD — DESIGN SYSTEM
+================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --orange: #F4A36C;
+    --blue: #8BBBDC;
+    --cream: #FFFAF2;
+    --brown: #51443C;
+    --white: #FFFFFF;
+    --light-orange: #FBE5D5;
+    --light-blue: #E3F0F8;
+    --border: #EFE5D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+/* HEADER */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.main-nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #DB905F;
+}
+
+/* PAGE INTRO */
+
+.page-intro {
+    text-align: center;
+    padding: 75px 20px 45px;
+    background: linear-gradient(120deg, #FBE5D5, #E3F0F8);
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #B97850;
+}
+
+.page-intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 58px);
+    margin: 15px 0;
+}
+
+.page-intro p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* CONTENT */
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 55px auto;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading small {
+    color: #C48660;
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+/* FILTERS */
+
+.archive-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.archive-filters input,
+.archive-filters select {
+    padding: 13px 16px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: white;
+    color: var(--brown);
+    outline: none;
+}
+
+.archive-filters input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.archive-filters select {
+    min-width: 145px;
+}
+
+/* YEAR BUTTONS */
+
+.year-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.year-button {
+    padding: 12px 23px;
+    border: none;
+    border-radius: 30px;
+    background: var(--light-blue);
+    color: var(--brown);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.year-button:hover,
+.year-button.active {
+    background: var(--orange);
+    color: white;
+}
+
+/* VIDEO CARDS */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 23px;
+}
+
+.video-card {
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.25s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brown);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 18px;
+}
+
+.video-info small {
+    color: #C48660;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.video-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    margin: 9px 0;
+}
+
+.video-info p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.video-link {
+    display: inline-block;
+    margin-top: 13px;
+    color: #BD8057;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* EMPTY STATE */
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 20px;
+    border: 1px dashed var(--border);
+}
+
+.empty-state h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.empty-state p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+.site-footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #F3E8DB;
+    margin-top: 70px;
+}
+
+.site-footer h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.site-footer p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* MOBILE */
+
+@media(max-width: 650px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .archive-filters {
+        flex-direction: column;
+    }
+
+    .archive-filters input,
+    .archive-filters select {
+        width: 100%;
+    }
+}
